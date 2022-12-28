@@ -526,6 +526,9 @@ header .container .links.show-nav-mobile {
   left: 1px;
   bottom: 10px;
 }
+.Partners-section-title {
+  direction: ltr;
+}
 .services-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
@@ -536,7 +539,7 @@ header .container .links.show-nav-mobile {
 .services-container a {
   background-color: var(--bkg-color);
   height: 180px;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #5956e9;
   border-radius: 11px;
   -webkit-border-radius: 11px;
   -moz-border-radius: 11px;
@@ -597,11 +600,13 @@ header .container .links.show-nav-mobile {
   }
 }
 .gallery-container .box {
-  overflow: hidden;
   border-radius: 11px;
+  overflow: hidden;
 }
 .gallery .gallery-container .box img {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .gallery .container a {
   display: block;
@@ -892,6 +897,10 @@ footer .what-i-am img {
   border: 3px solid white;
   margin: 2px;
   border-radius: 11px;
+}
+.footer .footer-gallery a {
+  display: inline-block;
+  margin-top: 20px;
 }
 .footer .copyright {
   text-align: center;
@@ -1513,7 +1522,6 @@ form input[type="submit"] {
     width: fit-content;
   }
 }
-
 /* End User SignUp And Login Pages  */
 /* Start User Profile */
 /* End User Profile */
@@ -1521,22 +1529,18 @@ form input[type="submit"] {
   padding: 50px 0;
   font-family: Font;
 }
-
 .user-orders .container .details {
   display: flex;
 }
-
 .user-orders .container .user-transactions-type {
   display: flex;
   flex-direction: column;
 }
-
 .user-orders .container .user-transaction {
   display: flex;
   align-items: center;
   margin: 15px 0;
 }
-
 .user-orders .container .user-transaction svg {
   width: 30px;
   height: 30px;
@@ -1681,6 +1685,52 @@ form input[type="submit"] {
   .password-reset {
     margin-right: 0;
   }
+}
+.logout-container {
+  font-family: Font;
+  background-color: var(--bkg-color);
+  box-shadow: 10px 10px 20px #ddd, -10px -10px 20px #ddd;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 1.7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.logout-container p {
+  margin: 15px auto;
+  padding-right: 20px;
+}
+.logout-container p:first-child {
+  color: #d50961;
+  padding: 0 20px 15px 0;
+  border-bottom: 1px solid #080e35;
+}
+.logout-container button {
+  cursor: pointer;
+  width: 100px;
+  line-height: 1.7;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+.logout-container .btns {
+  margin-right: 20px;
+}
+.logout-container #logout {
+  background-color: #d50961;
+  color: white;
+}
+.logout-container #cancel-logout {
+  border: 1px solid #707070;
 }
 /* End User Profile */
 /* Start Discovering All Services Page */
@@ -1998,14 +2048,15 @@ form input[type="submit"] {
   right: 20px;
 }
 .fullscreen .close {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 22%;
+  left: 33%;
+  transform: translate(-50%, -50%);
   background-color: #d50861;
   color: white;
   padding: 15px;
