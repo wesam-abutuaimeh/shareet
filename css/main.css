@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: SST-Arabic-Font;
 }
 html {
   scroll-behavior: smooth;
@@ -77,7 +78,7 @@ textarea {
   }
 }
 @font-face {
-  font-family: Font;
+  font-family: SST-Arabic-Font;
   src: url(../font/SST-Arabic-Bold.ttf);
 }
 /* Start Header */
@@ -106,7 +107,6 @@ header .container .links li {
   line-height: 1.7;
 }
 header .container .links a {
-  font-family: "Font";
   white-space: nowrap;
   color: var(--main-color);
 }
@@ -140,9 +140,8 @@ header .container .toogle {
 }
 header .container .my-account {
   font-size: 20px;
-  font-weight: bold;
+  -weight: bold;
   letter-spacing: 1px;
-  font-family: Font;
   -webkit-text-fill-color: #fff;
   -webkit-text-stroke: 1px #d40761;
 }
@@ -193,7 +192,6 @@ header .container .links.show-nav-mobile {
   position: relative;
   background-color: var(--bkg-color);
   overflow: hidden;
-  font-family: Font;
 }
 .landing-section .container {
   min-height: calc(100vh - 110px);
@@ -204,7 +202,6 @@ header .container .links.show-nav-mobile {
 .landing-section .container .intro {
   max-width: 524px;
   position: relative;
-  font-family: Font;
   line-height: 1.7;
 }
 .landing-section .container .intro h1 {
@@ -230,7 +227,6 @@ header .container .links.show-nav-mobile {
   width: fit-content;
 }
 .landing-section .container .textual-content p {
-  font-family: Font;
   width: fit-content;
   margin: 20px 0;
   font-size: 22px;
@@ -351,7 +347,6 @@ header .container .links.show-nav-mobile {
   position: relative;
   margin: 100px 0;
   background-color: var(--bkg-color);
-  font-family: Font;
 }
 .why-choose-sawerny .container {
   display: flex;
@@ -482,7 +477,6 @@ header .container .links.show-nav-mobile {
 .section-title {
   text-align: center;
   color: #292930;
-  font-family: Font;
   padding: 0 10px;
 }
 .section-title-container .small-span {
@@ -506,7 +500,6 @@ header .container .links.show-nav-mobile {
   color: #292930;
   z-index: 1;
   margin-top: 10px;
-  font-family: "Font";
   font-size: 27px;
   line-height: 1.7;
 }
@@ -562,7 +555,6 @@ header .container .links.show-nav-mobile {
 .box-info span {
   display: block;
   font-size: 22px;
-  font-family: Font;
   color: #292930;
   margin-top: 10px;
 }
@@ -654,7 +646,6 @@ header .container .links.show-nav-mobile {
 /* Start Testimonials Section */
 .testimonials {
   background-color: var(--bkg-color);
-  font-family: Font;
 }
 .testimonials .container {
   display: flex;
@@ -692,11 +683,11 @@ header .container .links.show-nav-mobile {
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+       : swiper-icons;
+    font-size: var(--swiper-navigationfont-size);
   text-transform: none;
   letter-spacing: 0;
-  font-variant: initial;
+    -variant: initial;
   line-height: 1.7;
   position: absolute;
   top: 50%;
@@ -736,9 +727,6 @@ header .container .links.show-nav-mobile {
 /* Start Feedback Section */
 .feedback {
   padding: 50px 0;
-}
-.feedback .container {
-  font-family: Font;
 }
 .feedback .container .inputs-container {
   display: flex;
@@ -781,7 +769,6 @@ header .container .links.show-nav-mobile {
 .footer {
   background-color: var(--bkg-color);
   padding: 70px 0 0;
-  font-family: Font;
 }
 @media (max-width: 767px) {
   .footer {
@@ -796,7 +783,7 @@ header .container .links.show-nav-mobile {
 .footer .box h3 {
   color: #292f51;
   font-size: 35px;
-  font-weight: 900;
+  -weight: 900;
 }
 .footer .box span {
   color: #d50861;
@@ -920,7 +907,6 @@ footer .what-i-am img {
   display: flex;
   align-items: center;
   height: calc(100vh - 90px);
-  font-family: Font;
 }
 .who-we-are-intro .textual-content {
   flex: 1;
@@ -937,7 +923,7 @@ footer .what-i-am img {
   width: 190px;
   text-align: center;
   border-radius: 5px;
-  font-size: 25px;
+    font-size: 25px;
   padding: 10px;
 } */
 .who-we-are-intro .textual-content span {
@@ -992,7 +978,7 @@ footer .what-i-am img {
 /* Start Statistics Section */
 .statistics .statistics-container {
   background-color: #d50861;
-  font-family: Font;
+
   margin: 50px 0;
 }
 .statistics .statistics-container .container {
@@ -1020,7 +1006,7 @@ footer .what-i-am img {
 /* Start Contact-us Section */
 .contact-us {
   padding: 100px 0;
-  font-family: Font;
+
   line-height: 1.7;
 }
 .contact-us .container {
@@ -1130,7 +1116,6 @@ form input[type="submit"] {
 }
 
 .privacy-policy .container ul > p {
-  font-family: Font;
   font-size: 25px;
   color: var(--main-color);
   width: fit-content;
@@ -1153,7 +1138,7 @@ form input[type="submit"] {
 
 .privacy-policy .container ul li p {
   line-height: 1.7;
-  font-family: Font;
+
   color: var(--main-color);
   padding-right: 15px;
   max-width: 900px;
@@ -1170,7 +1155,6 @@ form input[type="submit"] {
 .fqa {
   background-color: var(--bkg-color);
   padding: 50px 0;
-  font-family: Font;
 }
 .fqa .container {
   display: flex;
@@ -1212,7 +1196,6 @@ form input[type="submit"] {
 .error-container {
   background-color: var(--bkg-color);
   padding: 50px 0;
-  font-family: Font;
 }
 .error-container .container {
   display: flex;
@@ -1250,7 +1233,6 @@ form input[type="submit"] {
 .login-container {
   padding: 50px 0;
   background-color: var(--bkg-color);
-  font-family: Font;
 }
 .login-container .container,
 .password-confirmation-code-container .container {
@@ -1310,7 +1292,6 @@ form input[type="submit"] {
 }
 /* password recovery page*/
 .password-recovery-container {
-  font-family: Font;
   background-color: var(--bkg-color);
   padding: 50px 0;
 }
@@ -1350,7 +1331,6 @@ form input[type="submit"] {
 .password-confirmation-code-container {
   padding: 50px 0;
   background-color: var(--bkg-color);
-  font-family: Font;
 }
 .password-confirmation-code-container .password-confirmation-code-info {
   justify-content: center;
@@ -1408,7 +1388,7 @@ form input[type="submit"] {
 .signup-container {
   padding: 50px 0;
   background-color: var(--bkg-color);
-  font-family: Font;
+
   overflow: hidden;
 }
 .signup-container .container {
@@ -1527,7 +1507,6 @@ form input[type="submit"] {
 /* End User Profile */
 .user-orders {
   padding: 50px 0;
-  font-family: Font;
 }
 .user-orders .container .details {
   display: flex;
@@ -1687,7 +1666,6 @@ form input[type="submit"] {
   }
 }
 .logout-container {
-  font-family: Font;
   background-color: var(--bkg-color);
   box-shadow: 10px 10px 20px #ddd, -10px -10px 20px #ddd;
   width: 300px;
@@ -1764,8 +1742,8 @@ form input[type="submit"] {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
-  font-family: Font;
-  font-weight: bold;
+
+  -weight: bold;
   cursor: pointer;
 }
 .page-number.active {
@@ -1779,7 +1757,6 @@ form input[type="submit"] {
   position: relative;
   padding: 30px 0;
   background-color: var(--bkg-color);
-  font-family: Font;
 }
 .service .container {
   display: flex;
@@ -1872,9 +1849,6 @@ form input[type="submit"] {
 /* End  Services Order Page */
 /* End Services Request Page */
 /* Start Order Request Page */
-.order .container {
-  font-family: Font;
-}
 .order .container p {
   color: #969699;
   margin: 10px 0;
@@ -1967,7 +1941,6 @@ form input[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Font";
   background-color: #f7f8fd;
   padding: 20px 10px;
   border-radius: 11px;
