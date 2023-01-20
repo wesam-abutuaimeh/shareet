@@ -1,4 +1,4 @@
-# [Sawerny](https://sawerny.netlify.app/)
+# [Sawerny](https://sawernyy.netlify.app/)
 
 # Welcome to the Sawerny repository!
 This website was built for a real client who wanted a professional platform for their photo shooting business
