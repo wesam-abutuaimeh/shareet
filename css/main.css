@@ -541,10 +541,9 @@ header .container .links.show-nav-mobile {
 }
 .services-container .box-info {
   display: flex;
-  margin: 10px;
-  justify-content: center;
+  margin: 0 10px;
+  justify-content: space-evenly;
   flex-direction: column;
-  gap: 15px;
 }
 .services-container .box-info svg {
   width: 50px;
@@ -597,6 +596,7 @@ header .container .links.show-nav-mobile {
 }
 .gallery .gallery-container .box img {
   width: 100%;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
 }
@@ -996,7 +996,8 @@ footer .what-i-am img {
 .statistics .statistics-container .container .statistic .number {
   -webkit-text-fill-color: #d50861;
   -webkit-text-stroke: 1px #fff;
-  font-size: 50px;
+  font-size: 70px;
+  letter-spacing: 2px;
 }
 .statistics .statistics-container .container .statistic .name {
   margin-top: 10px;
