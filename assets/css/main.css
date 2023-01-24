@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 ::selection {
-  color: white;
+  color: var(--bkg-color);
   background-color: #d40761;
 }
 ::-webkit-scrollbar {
@@ -670,33 +670,7 @@ header .container .links.show-nav-mobile {
   -ms-border-radius: 11px;
   -o-border-radius: 11px;
   box-shadow: 0 10px 20px #ddd, 0 0 20px #ddd;
-} /*
-.swiper-pagination-bullet {
-  width: 26px;
-  height: 7px;
-  border-radius: 25px;
-  background-color: #d50861;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-       : swiper-icons;
-    font-size: var(--swiper-navigationfont-size);
-  text-transform: none;
-  letter-spacing: 0;
-    -variant: initial;
-  line-height: 1.7;
-  position: absolute;
-  top: 50%;
-  transform: translateY(50%);
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-} */
 .stars-container {
   display: inline-flex;
 }
@@ -864,11 +838,6 @@ footer .what-i-am img {
 }
 .footer .box .links li {
   padding: 15px 0;
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
 }
 .footer .box .title {
   color: #292f51;
@@ -1034,6 +1003,7 @@ footer .what-i-am img {
   justify-content: space-between;
   margin: 20px 0;
   width: 400px;
+  direction: ltr;
 }
 @media (max-width: 991px) {
   .contact-us .container .info-side .spans {
