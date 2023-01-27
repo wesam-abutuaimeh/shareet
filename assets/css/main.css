@@ -1319,7 +1319,7 @@ form input[type="submit"] {
 }
 .password-confirmation-code-container form .input-field input {
   height: 45px;
-  width: 42px;
+  width: 60px;
   border-radius: 6px;
   font-size: 1.125rem;
   text-align: center;
