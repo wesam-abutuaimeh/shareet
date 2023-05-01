@@ -95,7 +95,7 @@ header .container {
   height: 90px;
 }
 header .container .logo img {
-  height: 60px;
+  height: 150px;
   flex: 1;
 }
 header .container .links {
@@ -770,6 +770,7 @@ header .container .links.show-nav-mobile {
 }
 .footer .box span {
   color: #345e6c;
+  padding: 15px 0;
 }
 .footer .box .social {
   display: flex;
@@ -832,7 +833,7 @@ footer .what-i-am {
   justify-content: space-between;
 }
 footer .what-i-am img {
-  width: 80px;
+  width: 160px;
 }
 .footer .box .text {
   color: #292f51;
