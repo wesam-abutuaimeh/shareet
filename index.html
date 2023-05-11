@@ -13,6 +13,9 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- GLightbox library  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   <link rel="shortcut icon" href="assets/imgs/camera_photo.png" type="image/x-icon" />
 </head>
 
@@ -40,8 +43,9 @@
         </ul>
       </nav>
       <svg class="toogle" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
-        <rect id="Rectangle_64" data-name="Rectangle 64" width="67" height="67" rx="10" fill="#d40761" />
-        <line id="Line_7" data-name="Line 7" x2="43.139" transform="translate(11.93 25.411)" fill="none" stroke="#fff"
+        <path id="Path_26" data-name="Path 26"
+          d="M10,0H57A10,10,0,0,1,67,10V57A10,10,0,0,1,57,67H10A10,10,0,0,1,0,57V10A10,10,0,0,1,10,0Z" fill="#569ab1" />
+        <line id="Line_38" data-name="Line 38" x2="43.139" transform="translate(11.93 25.411)" fill="none" stroke="#fff"
           stroke-width="2" />
         <line id="Line_8" data-name="Line 8" x2="43.139" transform="translate(11.93 33.5)" fill="none" stroke="#fff"
           stroke-width="2" />
@@ -72,12 +76,10 @@
                 d="M19.813,8.922a6,6,0,0,1,10.374,0L44.758,33.984A6,6,0,0,1,39.571,43H10.429a6,6,0,0,1-5.187-9.016Z"
                 transform="translate(74 21) rotate(90)" fill="#d50861" />
             </svg>
-            <span>شاهد فيديو تعرفي عن شريط</span>
+            <span class="glightbox">شاهد فيديو تعرفي عن شريط</span>
           </div>
         </div>
       </div>
-      <video id="video" src="assets/imgs/video.mp4" controls></video>
-      <span id="cancel-video-run-btn">x</span>
     </div>
     <img src="assets/imgs/camera_photo.png" alt="camera_photo" class="camera-photo" />
     <!-- <img src="assets/imgs/Ellipse 1.png" alt="ellipse-shape" class="ellipse-shape" /> -->
@@ -910,18 +912,6 @@
     toogle.addEventListener("click", () => {
       nav.classList.toggle("show-nav-mobile");
     });
-    const videoRun = document.querySelector(".video-anchor span");
-    const videoCancle = document.querySelector("#cancel-video-run-btn");
-    videoRun.addEventListener("click", () => {
-      video.style.display = "block";
-      videoCancle.style.display = "block";
-      video.play();
-    });
-    videoCancle.addEventListener("click", () => {
-      video.style.display = "none";
-      videoCancle.style.display = "none";
-      video.pause();
-    });
     var swiper = new Swiper(".swiper-container", {
       navigation: {
         nextEl: ".swiper-button-next",
@@ -941,6 +931,16 @@
         dynamicBullets: true,
       },
     });
+  </script>
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'href': 'https://www.youtube.com/watch?v=f5BBJ4ySgpo', // YouTube Video Must Be Here
+      'type': 'video',
+      'source': "youtube",
+      'width': 900,
+      'autoPlayVideo': "true",
+    },);
+
   </script>
 </body>
 

@@ -14,6 +14,7 @@ html {
 }
 :root {
   --main-color: #080e35;
+  --alt-main-color: #d50861;
   --second-primary-color: #3f3b6c;
   --btn-color: #569ab1;
   --bkg-color: white;
@@ -113,7 +114,7 @@ header .container .links a {
   color: var(--main-color);
 }
 header .container .links a.active {
-  border-bottom: 1px solid #d50861;
+  border-bottom: 1px solid var(--alt-main-color);
 }
 header .container .links .login-signup-btns {
   display: flex;
@@ -129,7 +130,7 @@ header .container .links .sign-btn {
   position: relative;
   margin-right: 20px;
   color: var(--main-color);
-  border: 1px solid #d50861;
+  border: 1px solid var(--alt-main-color);
 }
 header .container .links .sigup-btn {
   background-color: var(--btn-color);
@@ -267,44 +268,13 @@ header .container .links.show-nav-mobile {
   border-bottom: 1px solid #080e35;
   cursor: pointer;
 }
-.landing-section .container video {
-  width: 800px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  border-radius: 11px;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
-  -ms-border-radius: 11px;
-  -o-border-radius: 11px;
-  z-index: 5;
-  display: none;
-}
-#cancel-video-run-btn {
-  display: block;
-  position: absolute;
-  left: 20%;
-  top: 5%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  background-color: #d50861;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1.7;
-  display: none;
-  cursor: pointer;
-  font-size: 20px;
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+  background-color: var(--alt-main-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .landing-section .ellipse-shape {
   position: absolute;
@@ -940,8 +910,7 @@ footer .what-i-am img {
 }
 /* Start Statistics Section */
 .statistics .statistics-container {
-  background-color: #d50861;
-
+  background-color: var(--alt-main-color);
   margin: 50px 0;
 }
 .statistics .statistics-container .container {
@@ -957,7 +926,7 @@ footer .what-i-am img {
   color: white;
 }
 .statistics .statistics-container .container .statistic .number {
-  -webkit-text-fill-color: #d50861;
+  -webkit-text-fill-color: var(--alt-main-color);
   -webkit-text-stroke: 1px #fff;
   font-size: 70px;
   letter-spacing: 2px;
@@ -1174,7 +1143,7 @@ form input[type="submit"] {
   width: 400px;
 }
 .error-container .container a {
-  background-color: #d50861;
+  background-color: var(--alt-main-color);
   color: white;
   width: 300px;
   text-align: center;
@@ -1517,13 +1486,13 @@ form input[type="submit"] {
 }
 .user-orders .container .transactions table th {
   color: #d50961;
-  border: 1px solid #d50861;
+  border: 1px solid var(--alt-main-color);
   padding: 15px;
 }
 .user-orders .container .transactions table td {
   color: var(--main-color);
   padding: 15px;
-  border: 1px solid #d50861;
+  border: 1px solid var(--alt-main-color);
 }
 .user-orders .container .transactions table button {
   border: none;
@@ -1736,7 +1705,7 @@ form input[type="submit"] {
   width: 400px;
 }
 .service .container .textual-content .sub-title {
-  color: #d50861;
+  color: var(--alt-main-color);
 }
 .service .container .textual-content p,
 .who-we-are-intro .container .textual-content p {
@@ -1773,7 +1742,7 @@ form input[type="submit"] {
 .service .container .btns .gallery-btn,
 .who-we-are-intro .btns .gallery-btn {
   color: #292930;
-  border: 1px solid #d50861;
+  border: 1px solid var(--alt-main-color);
 }
 @media (max-width: 991px) {
   .service .container {
@@ -2011,7 +1980,7 @@ form input[type="submit"] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #d50861;
+  background-color: var(--alt-main-color);
   color: white;
   padding: 15px;
   border: none;
@@ -2038,7 +2007,7 @@ form input[type="submit"] {
   top: 22%;
   left: 33%;
   transform: translate(-50%, -50%);
-  background-color: #d50861;
+  background-color: var(--alt-main-color);
   color: white;
   padding: 15px;
   border: none;
